@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;;
+            background-color: rgba(88, 49, 49, 0.904);
+            color: azure;
+            padding-top: 15px;
+            align-items: center;
+            align-content: center;
+            align-self: center;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+</head>
+<body>
+    <form action="proses.php" method="post">
+        Nama: <input type="text" name="nama"><br>
+        Email: <input type="email" name="email"><br>
+        Jenis Kelamin:
+        <input type="radio" name="jk" value="L"> Laki-Laki
+        <input type="radio" name="jk" value="P"> Perempuan<br>
+        Hobi:
+        <input type="checkbox" name="hobi" value="baca"> Membaca
+        <input type="checkbox" name="hobi" value="musik"> Musik<br>
+        Jurusan:
+        <select name="Jurusan">
+            <option>Informatika</option>
+            <option>Sistem Informasi</option>
+        </select><br>
+        Alamat: <textarea name="alamat" rows="3"></textarea><br>
+        <button type="submit">Kirim</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+        h1 {text-align: center;
+            color: azure;}
+        }
+              .tombol-kirim {
+            background-color: #1a56b0;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        th {
+            background-color:#1a56b0;
+            color: white;
+            padding: 10px;
+            border: 1px solid #ccd;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #ccd;
+        }
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+</head>
+<body>
+        <form action="proses.php" method="post">
+        Nama: <input type="text" name="nama"><br>
+        Jenis Kelamin:
+        <input type="radio" name="jk" value="L"> Laki-Laki
+        <input type="radio" name="jk" value="P"> Perempuan<br>
+        Jurusan:
+        <select name="Jurusan">
+            <option>Informatika</option>
+            <option>Sistem Informasi</option>
+        </select><br>
+        <button type="submit" class="tombol-kirim">Kirim
+        </button>
+    </form>
+     <table border="1">
+    <caption>DaftarNilai</caption>
+    <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th> Jurusan</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Budi Santoso</td>
+        <td>Informatika</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Sari Wulandari</td>
+        <td>Sistem Informasi</td>
+    </tr>
+    </table>
+   
+</body>
+</html>
